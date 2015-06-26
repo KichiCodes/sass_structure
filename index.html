@@ -1,0 +1,117 @@
+<!--
+	KichiCode | TypeScale
+	=====================
+	JQuery from: https://github.com/alvarotrigo/fullPage.js
+	=====================
+	Created by: KML | www.colouredpixel.com
+	
+	There is a scale we need to follow when it comes to proper Text Heading font sizes.
+	This is a compilation for these scales from typescale.com
+
+	Main Base Font Size: 16px = 1em
+
+	http://type-scale.com/
+-->
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>KichiCode - TypeScale</title>
+	<meta name="author" content="Krista Marie Lacida" />
+	<meta name="description" content="TypeScale is a small project to show different Type Scale ratios for Font Headings" />
+	<meta name="keywords"  content="KichiCode, Type Scale, font sizes, heading sizes" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css" />
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/vendors/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['aboutTypeScale', 'minorThird', 'majorThird', 'perfectFourth', 'augmentedFourth'],
+				sectionsColor: ['#ffffff', '#222222', '#ffffff', '#222222', '#222222'],
+				scrollBar: true
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+	<div id="fullpage">
+		<!-- About TypeScale -->
+		<div class="section" id="section0">
+			<div class="intro">
+				<h1>TypeScale</h1>
+				<p>Compilation of the scales <a href="http://www.twitter.com/kristalacida" target="_blank">KML</a> normally uses. All thanks to <a href="http://type-scale.com/" target="_blank">typescale.com</a></p>
+				<hr>
+				<p class="note">Sorry. This is not a responsive page.</p>
+			</div>
+		</div>
+		<!-- 1: Minor Third -->
+		<div class="section minorThird" id="section1">
+			<div class="intro">
+				<h1>Minor Third - <span class="type-size">2.074em</span></h1>
+				<h2>Minor Third - <span class="type-size">1.728em</span></h2>
+				<h3>Minor Third - <span class="type-size">1.44em</span></h3>
+				<h4>Minor Third - <span class="type-size">1.2em</span></h4>
+				<h5>Minor Third - <span class="type-size">1em</span></h5>
+				<h6>Minor Third - <span class="type-size">.833em</span></h6>
+			</div>
+		</div>
+		<!-- 2: Major Third -->
+		<div class="section majorThird" id="section2">
+			<div class="intro">
+				<h1>Major Third - <span class="type-size">2.441em</span></h1>
+				<h2>Major Third - <span class="type-size">1.953em</span></h2>
+				<h3>Major Third - <span class="type-size">1.563em</span></h3>
+				<h4>Major Third - <span class="type-size">1.25em</span></h4>
+				<h5>Major Third - <span class="type-size">1em</span></h5>
+				<h6>Major Third - <span class="type-size">.8em</span></h6>
+			</div>
+		</div>
+		<!-- 3: Perfect Fourth -->
+		<div class="section perfectFourth" id="section3">
+			<div class="intro">
+				<h1>Perfect Fourth - <span class="type-size">3.157em</span></h1>
+				<h2>Perfect Fourth - <span class="type-size">2.369em</span></h2>
+				<h3>Perfect Fourth - <span class="type-size">1.777em</span></h3>
+				<h4>Perfect Fourth - <span class="type-size">1.333em</span></h4>
+				<h5>Perfect Fourth - <span class="type-size">1em</span></h5>
+				<h6>Perfect Fourth - <span class="type-size">.75em</span></h6>
+			</div>
+		</div>
+
+		<!-- 4: Augmented Fourth -->
+		<div class="section augmentedFourth" id="section4">
+			<div class="intro">
+				<h1>Augmented Fourth - <span class="type-size">3.998em</span></h1>
+				<h2>Augmented Fourth - <span class="type-size">2.827em</span></h2>
+				<h3>Augmented Fourth - <span class="type-size">1.999em</span></h3>
+				<h4>Augmented Fourth - <span class="type-size">1.414em</span></h4>
+				<h5>Augmented Fourth - <span class="type-size">1em</span></h5>
+				<h6>Augmented Fourth - <span class="type-size">.707em</span></h6>
+			</div>
+		</div> 
+	</div>
+
+
+</body>
+</html>
